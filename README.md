@@ -20,9 +20,6 @@ This README has three parts. First is a brief explanation of the order to run sc
 
 - `chicagoCensusBlocksWithNearestFireStationAndDistance.zip` - Zipped GeoJSON with all chicago census blocks matched with their nearest fire stations and the distance to that closest fire station. The census block data was downloaded from https://hub.arcgis.com/datasets/d795eaa6ee7a40bdb2efeb2d001bf823_0/about (see `scripts/getCensusBlocks.py`). The fire stations come from the aforementioned `Fire_Stations.zip` file
 
-- `rectGrid_200RectsSallSide.geojson`
-
-
 - `scripts/getCensusBlocks.py` - Used to download census block data from the arcgis database we found online (https://hub.arcgis.com/datasets/d795eaa6ee7a40bdb2efeb2d001bf823_0/about). The script downloads the census blocks in chunks which can be concatenated into a complete file with `scripts/concatCensusChunks.py`. This download-in-batches process is because the API has a limit on the number of rows which can be downloaded at a single time.
 
 - `scripts/concatCensusChunks.py` - Concatenates the downloaded census block data from `scripts/getCensusBlocks.py`
